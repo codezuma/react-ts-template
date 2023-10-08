@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -13,6 +12,21 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "paths": {
+      "App": ["App"],
+      "main": ["main"],
+      "index.css": ["index."],
+      "$components/*": ["components/*"],
+      "$apis/*": ["apis/*"],
+      "$lib/*": ["lib/*"],
+      "$hooks/*": ["hooks/*"],
+      "$features/*": ["features/*"],
+      "$context/*": ["context/*"],
+      "$layouts/*": ["layouts/*"],
+      "$interface/*": ["interface/*"],
+      "$pages/*": ["pages/*"]
+    },
+    "baseUrl": "src",
 
     /* Linting */
     "strict": true,
